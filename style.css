@@ -11,12 +11,27 @@ body {
     -webkit-font-smoothing: antialiased !important;
 }
 
-header#main-header{
+input, button {
+    outline: 0;;
+}
+
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+header#main-header .content{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
+}
+
+header#main-header{
     height: 46px;
     background: #FFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0.25%);
 }
 
 header#main-header nav ul{
@@ -35,8 +50,41 @@ header#main-header nav ul li:first-child {
     margin: 0px;
 }
 
+header#main-header div.sid {
+    display: flex;
+}
+
+header#main-header div.sid input{
+    width: 220px;
+
+    border: 1px solid #E6ECF0;
+    height: 34px;
+    padding: 0 30px 0 12px;
+    border-radius: 16px;
+    color: #667581;
+    font-size: 12px;
+    background: #f5f8fa url('/images/ser') no-repeat 190px center;
+}
+
 header#main-header div.sid img {
     height: 34px;
     width: 34px;
     border-radius: 50%;
+    margin: 0 15px;
+}
+
+header#main-header div.sid button {
+    height: 34px;
+    background: #3bb9e3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+    border-radius: 16px;
 }
